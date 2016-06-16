@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="otokiralama.master.cs" Inherits="polat" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Yönetim Paneli</title> 
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.accordion.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.custom-scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/js/icheck.min.js"></script>
+    <script type="text/javascript" src="assets/js/selectnav.min.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    
+
+        <div class="wrapper">
+	<div class="structure-row">
+        <aside class="sidebar">
+        	<div class="sidebar-in">
+                <header>
+                    <div class="logo">
+                        <a href="Default.aspx"><img src="../assets/images/logo.png" alt="Adminise" /></a>
+                    </div>
+                    <a href="#" class="togglemenu">&nbsp;</a>
+                    <div class="clearfix"></div>
+                </header>
+                <nav class="navigation">
+                    <ul class="navi-acc" id="nav2">
+                        <li>
+                        <a href="Default.aspx" class="dashboard">Anasayfa</a></li>                     
+                    
+                        <li>
+                            <a href="#" class="layouts">ARAÇ YÖNETİMİ</a>
+                            <ul>
+                                <li><a href="Arac-Listesi.aspx">Araç Listesi</a></li>
+                                <li><a href="Arac-Ekle.aspx">Araç Ekle</a></li>
+                                <li><a href="Arac-Sil.aspx">Araç Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        <a href="#" class="ui-elements">REZERVASYON</a>
+                        <ul>
+                            <li><a href="Rezervasyonlar.aspx">Rezervasyonlar</a></li>
+                            <li><a href="Rezervasyon-Ekle.aspx">Rezervasyon Ekle</a></li>
+                            <li><a href="Rezervasyon-Sil.aspx">Rezervasyon Sil</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="#" class="mailbox">MENÜ</a>
+                            <ul>
+                                <li><a href="Menu.aspx">Menü</a></li>
+                                <li><a href="Menu-Ekle.aspx">Menü Ekle</a></li>
+                                <li><a href="Menu-Sil.aspx">Menü Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mailbox">SAYFA YÖNETİMİ</a>
+                            <ul>
+                                <li><a href="Sayfalar.aspx">Sayfalar</a></li>
+                                <li><a href="Sayfa-Ekle.aspx">Sayfa Ekle</a></li>
+                                <li><a href="Sayfa-Sil.aspx">Sayfa Sil</a></li>
+                            </ul>
+                        </li>
+                         <li>
+                            <a href="#" class="mailbox">SLİDER YÖNETİMİ</a>
+                            <ul>
+                                <li><a href="Slider.aspx">Slider</a></li>
+                                <li><a href="Slider-Ekle.aspx">Slider Ekle</a></li>
+                                <li><a href="Slider-Sil.aspx">Slider Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="forms">DUYURU YÖNETİMİ</a>
+                            <ul>
+                                <li><a href="Duyurular.aspx">Duyurular</a></li>
+                                <li><a href="Duyuru-Ekle.aspx">Duyuru Ekle</a></li>
+                                <li><a href="Duyuru-Sil.aspx">Duyuru Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="pages">MESAJLAR</a>
+                            <ul>
+                                <li><a href="Mesaj-Listesi.aspx">Mesaj Listesi</a></li>
+                                <li><a href="Mesaj-Sil.aspx">Mesaj Sil</a></li>
+                                 <li><a href="Mesaj-Gonder.aspx">Mesaj Gönder</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="extras">E-Bülten</a>
+                            <ul>
+                                <li><a href="Mail-Listesi.aspx">Mail Listesi</a></li>
+                                <li><a href="Mail-Uye-Sil.aspx">Mail Üye Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="charts">Üyeler</a>
+                            <ul>
+                                <li><a href="Uye-Listesi.aspx">Üye Listesi</a></li>
+                                <li><a href="Uye-Ekle.aspx">Üye Ekle</a></li>
+                                <li><a href="Uye-Sil.aspx">Üye Sil</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="loginoptions">İnsan Kaynakları</a>
+                            <ul>
+                                <li><a href="IK-Form-Listesi.aspx">Form Listesi</a></li>
+                                <li><a href="IK-Form-Sil.aspx">Form Sil</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <div class="clearfix"></div>
+                </nav>
+                <span class="shadows"></span>
+            </div>
+        </aside>
+        <div class="right-sec">
+            <header>
+                <nav class="topnav">
+                    <ul id="nav1">
+                        <li class="tasks">
+                        	<a target="_blank" href="http://otokiralamada.biz/"><i class="glyphicon glyphicon-check"></i>Site Önizleme</a>
+                            <div class="popdown">                     	
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li class="inbox">
+                        	<a href="Mesaj-Listesi.aspx"><i class="glyphicon glyphicon-envelope"></i><span><asp:Label ID="Label1" runat="server" Text="03"></asp:Label></span></a>
+                        </li>
+                        <li class="settings">
+                        	<a href="#"><i class="glyphicon glyphicon-wrench"></i>Ayarlar</a>
+                            <div class="popdown popdown-right settings">
+                            	<nav>
+                                	<a href="Site-Ayarlari.aspx"><i class="glyphicon glyphicon-user"></i>Site Ayarları</a>
+                                    <a href="Yonetici-Ayarlari.aspx"><i class="glyphicon glyphicon-pencil"></i>Yönetici Ayarları</a>
+                                    <a href="Yeni-Yonetici-Ekle.aspx"><i class="glyphicon glyphicon-pencil"></i>Yeni Yönetici Ekle</a>
+                                    <a href="Yonetici-Sil.aspx"><i class="glyphicon glyphicon-pencil"></i>Yönetici Sil</a>
+                                    <a href="#"><i class="glyphicon glyphicon-log-out"></i>Çıkış</a>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </header>
+            <div class="content-section">
+                <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                
+                        </div>
+                        
+                        
+                        
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42761673-1', 'extracoding.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+        
+    </form>
+</body>
+</html>

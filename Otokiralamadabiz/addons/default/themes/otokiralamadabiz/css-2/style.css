@@ -1,0 +1,253 @@
+@import url("font-face/stylesheet.css");
+/*-----------------------------------------------------------------------------------------------*/
+/* GLOBAL                                                                                		     */
+/*-----------------------------------------------------------------------------------------------*/
+body { background-color: #003471; font-family: "proxima_nova_rgregular"; background-image: url(../img/simge/back.png); background-repeat:none; background-position:top center; }
+h1, h2, h3, h4, h5, h6 { font-family: "proxima_nova_ltbold"; font-weight:bold; }
+.relative { position: relative; }
+a:active { outline: none; }
+a:focus { -moz-outline-style: none; }
+.txt-color-one { color: #0872ba; }
+.txt-color-two { color: #f15a27; }
+.space { margin-bottom:10px; }
+.txt-bold { font-family: "proxima_nova_ltbold"; font-weight:bold; }
+.txt-cond { font-family: "proxima_nova_cn_rgregular"; font-weight:normal; }
+.txt-italic { font-family: "proxima_nova_rgitalic"; }
+.txt-light { font-family: "proxima_nova_ltregular"; }
+.txt-semibold { font-family: "proxima_nova_ltbold"; font-weight:bold; }
+.txt-black { font-family: "proxima_nova_blregular"; font-weight:bold; }
+.txt-shadow { text-shadow: 1px 1px 0px #333; -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0.1, Direction=135, Color='#000000')"; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0.1, Direction=135, Color='#000000'); }
+.bg-white { background-color:white; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; border:1px solid #e7e7e7; }
+/*-----------------------------------------------------------------------------------------------*/
+/* BREADCRUMB 																																									 */
+/*-----------------------------------------------------------------------------------------------*/
+.breadcrumb { margin:0px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.breadcrumb a { color: #0872ba; text-decoration:none; }
+.breadcrumb a:hover { color: #f15a27; }
+/*-----------------------------------------------------------------------------------------------*/
+/* HEADER-TOP                                                                             		   */
+/*-----------------------------------------------------------------------------------------------*/
+.header-top { padding-top: 5px; height: 25px; position:relative; }
+.top-nav { position: absolute; overflow: hidden; text-align: right; margin: 0px; padding: 0px; right: 0px; }
+.top-nav li { display: inline; float: left; }
+.top-nav a { background-image: url(../img/simge/head_nav_icon.png); background-repeat: no-repeat; background-position: left center; padding-left: 14px; display: block; float: left; padding-right: 10px; color: #FFF; font-size: 11px; text-decoration:none; color:white; }
+.top-nav a:hover { color: orange; }
+.online_support { background-image: url(../img/simge/online_support.png); background-repeat: no-repeat; text-indent: -9999px; display: block; height: 20px; width: 119px; position: absolute; left: 0px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* HEADER                                                                             		 		   */
+/*-----------------------------------------------------------------------------------------------*/
+.header { background-image: url(../img/simge/header_bg.png); background-repeat: no-repeat; height: 165px; width: 950px; display: block; }
+.header a { text-decoration:none; }
+.header .top, .header .center, .header .bottom { position: relative; }
+.header .top { height:70px; }
+.head-logo { text-indent: -9999px; display: block; height: 50px; width: 270px; position: absolute; left: 17px; top: 8px; }
+.head-contact { text-indent: -9999px; display: block; height: 45px; width: 173px; position: absolute; top: 13px; right: 17px; }
+.header .center { height:40px; margin: 0px; padding: 0px; }
+.head-nav { margin: 0px; padding: 0px; }
+.home-btn { display:block; height:40px; width:50px; text-indent:-9999px; float:left; }
+.head-nav li { display: inline; list-style:none; }
+.head-nav li a { height: 30px; display: block; float: left; color: #FFF; padding-top: 10px; padding-right: 10px; padding-left: 10px; }
+.head-nav li a:hover, .head-nav li a:active { color: #FF0; }
+.header .bottom { height:45px; }
+.mini-news { margin: 0px; height: 25px; width: 600px; position: absolute; left: 145px; top: 12px; padding-top: 5px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: none; font-size:14px; }
+.mini-news a { color: #434343; }
+.exchange { width:200px; height:30px; padding-top:10px; }
+.exchange .dolar { margin-left:50px; width:60px; display:block; float:left; color:white; }
+.exchange .euro { margin-left:27px; width:55px; display:block; float:left; color:white; }
+/*-----------------------------------------------------------------------------------------------*/
+/* HOMEPAGE-RESERVATION                                                                          */
+/*-----------------------------------------------------------------------------------------------*/
+.reservation { background-image: url(../img/simge/pickup_return_bg.png); background-repeat: no-repeat; height: 295px; }
+.pickup, .return { padding:15px; }
+.pickup .title { background-image: url(../img/simge/reservation_pickup_head_bg.png); background-repeat: no-repeat; height: 25px; text-indent: -9999px; display: block; margin: 0px; padding: 0px; }
+.return .title { background-image: url(../img/simge/reservation_return_head_bg.png); background-repeat: no-repeat; height: 25px; text-indent: -9999px; display: block; margin: 0px; padding: 0px; }
+.reservation-form { height:245px; }
+.reservation-search { height:50px; text-indent:10px; }
+.reservation-search-btn { border:none; background-repeat:no-repeat; height: 30px; width: 200px; cursor: pointer; text-indent: -9999px; overflow: hidden; padding-right: 200px; background-color: transparent; background-image: url(../img/simge/reservation_home_search_btn.png); }
+.reservation-show-btn, .reservation-cancel-btn { border:none; background-repeat:no-repeat; height: 26px; width: 125px; cursor: pointer; text-indent: -9999px; overflow: hidden; padding-right: 125px; background-color: transparent; }
+.reservation-cancel-btn:hover, .reservation-cancel-btn:active { background-image: url(../img/simge/reservation_cancel_btn.png); }
+.reservation-show-btn:hover, .reservation-show-btn:active { background-image: url(../img/simge/reservation_show_btn.png); }
+.reservation-show-btn { background-image: url(../img/simge/reservation_show_btn.png); margin-left: 10px; }
+.reservation-cancel-btn { background-image: url(../img/simge/reservation_cancel_btn.png); margin-left: 10px; }
+.reservation-left { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: white; }
+/*-----------------------------------------------------------------------------------------------*/
+/* CARS-LIST					                                                                           */
+/*-----------------------------------------------------------------------------------------------*/
+.cars-list .item { background-color:white; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; min-height:174px; border:1px solid #e7e7e7; position:relative; }
+.cars-list .image { width:290px; height:158px; padding-top:16px; }
+.cars-list .image a { margin:0px auto 0px auto; }
+.cars-list .info { font-size:12px; width:160px; }
+.cars-list .title { padding-top:5px; font-size:14px; }
+.cars-list .info ul { list-style:none; margin:0px; width:160px; }
+.cars-list .price { padding:10px 0px 0px 5px; width:170px; border-left:1px solid #e5e5e5; min-height:164px; }
+.cars-list .price table { width:100%; color:#666; }
+.cars-list .price tr { border-bottom:1px dotted #b7b7b7; }
+.reservation_btn { background-image: url(../img/simge/reservation_btn.png); background-repeat: no-repeat; text-indent: -9999px; display: block; margin: 0px; padding: 0px; height: 25px; width: 125px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* HOMEPAGE-SLIDER                                                                          		 */
+/*-----------------------------------------------------------------------------------------------*/
+.car-slider { background-image: url(../img/simge/car_slider_bg.png); background-repeat: no-repeat; height: 295px; position:relative; }
+.car-slider .title { font-size: 14px; margin:0px; padding:0px 10px 0px 10px; }
+.car-slider .image { margin:2px; padding:1px; border: 1px solid #ededed; }
+.car-slides-pagination { margin:26px auto 0; width:100px; position:absolute; top:-10px; right:0px; z-index:1200; }
+.car-slides-pagination li { float:left; margin:0 1px; list-style:none; }
+.car-slides-pagination li a { display:block; width:13px; height:0; padding-top:13px; background-image:url(../img/simge/pagination.png); background-position:0 0; float:left; overflow:hidden; }
+.car-slides-pagination li.current a { background-position:0 -13px; }
+.car-slider .caption { z-index:500; position:absolute; bottom:-35px; left:0; height:30px; padding:10px 10px 0 10px; background:#000; background:rgba(0,0,0,.5); width:362px; font-size:1.3em; line-height:1.33; color:#fff; text-shadow:none; margin:0px 4px 5px 4px; }
+.car-slider .caption ul { list-style:none; margin:0px; padding:0px; font-size:11px; }
+.car-slider .caption li { float:left; margin-right:5px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* PAGES                                                                          		 */
+/*-----------------------------------------------------------------------------------------------*/
+.pages { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: white; border:1px solid #e7e7e7; }
+.pages .title { display:block; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; font-size:16px; padding:0px 20px 0px 20px; border-bottom:1px solid #e7e7e7; margin:0px; }
+.pages .content { padding:10px 20px 10px 20px; font-size:12px; color:#666; }
+/*-----------------------------------------------------------------------------------------------*/
+/* CARS-SLIDER                                                                          		 */
+/*-----------------------------------------------------------------------------------------------*/
+.car-slideshow { padding:0px; margin:0px; position:relative; overflow:hidden; }
+.car-slideshow .items { padding:0px; margin:0px; }
+.car-slideshow .item { background-image: url(../img/simge/car_slideshow_bg.png); background-repeat: no-repeat; height: 154px; list-style:none; width:230px; float:left; margin:0px 10px 0px 0px; padding:0px; }
+.car-slideshow .item .image { height: 120px; width: 110px; text-align:center; padding-top:10px; }
+.car-slideshow .item .info { width:115px; height:120px; font-size:10px; }
+.car-slideshow .item .info dt { float: left; width:50px; display:block; font-family: "proxima_nova_ltbold"; font-weight:bold; }
+.car-slideshow .item .info dd { float: left; width:60px; display:block; margin:0px; clear:right; }
+.car-slideshow .item .booking { width: 142px; height: 25px; display:block; text-indent:-9999px; float:left; }
+.car-slideshow .item .details { width: 88px; height: 25px; display:block; text-indent:-9999px; float:left; }
+.car-slideshow .item .title { font-size:14px; }
+/* .car-slideshow .item .image img { border: 2px solid #CCC; padding: 1px; } */
+.mini-icons { height:13px; width:13px; display:block; float:left; margin-top:3px; margin-right:2px; }
+.mini-person-icon { background-image: url(../img/simge/mini_car_icons.png); background-repeat: no-repeat; background-position: left top; }
+.mini-person-icon2 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:26px; }
+.mini-person-icon3 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:39px; }
+.mini-person-icon4 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:52px; }
+.mini-person-icon5 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:65px; }
+.mini-person-icon6 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:78px; }
+.mini-person-icon7 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:91px; }
+.mini-person-icon8 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:104px; }
+.mini-person-icon9 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:117px; }
+.mini-person-icon10 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left top; width:130px; }
+.mini-baggage-icon { background-image: url(../img/simge/mini_car_icons.png); background-repeat: no-repeat; background-position: 0px -14px; }
+.mini-baggage-icon2 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:26px; }
+.mini-baggage-icon3 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:39px; }
+.mini-baggage-icon4 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:52px; }
+.mini-baggage-icon5 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:65px; }
+.mini-baggage-icon6 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:78px; }
+.mini-baggage-icon7 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:91px; }
+.mini-baggage-icon8 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:104px; }
+.mini-baggage-icon9 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:117px; }
+.mini-baggage-icon10 { background-image: url(../img/simge/mini_car_icons.png); background-repeat: repeat-x; background-position: left -14px; width:130px; }
+.mini-fuel-icon { background-image: url(../img/simge/mini_car_icons.png); background-repeat: no-repeat; background-position: 0px -28px; }
+.mini-gear-icon { background-image: url(../img/simge/mini_car_icons.png); background-repeat: no-repeat; background-position: 0px -41px; }
+.mini-climate-icon { background-image: url(../img/simge/mini_car_icons.png); background-repeat: no-repeat; background-position: 0px -56px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* MINI-BOXES */
+/*-----------------------------------------------------------------------------------------------*/
+.mini-boxes { }
+.mini-boxes .box { background-image: url(../img/simge/mini-box_bg.png); background-repeat: no-repeat; height: 196px; width: 310px; }
+.mini-boxes .box .title { font-size:14px; height:34px; display:block; color:white; margin:0px; padding:0px; text-indent:15px; }
+/* SERVICES */
+.mini-boxes .services { padding:10px 10px 0px 10px; margin:0px; }
+.mini-boxes .services li { list-style:none; margin:0px; font-size:11px; }
+.mini-boxes .services li a { color: #535353; }
+.mini-boxes .services li a:hover { color: #f15a27; text-decoration:none; }
+.service-icons { height:21px; width:21px; display:block; margin-right:5px; background-image: url(../img/simge/services_icons.png); background-repeat: no-repeat; }
+.service-airport-icon { background-position: 0px 0px; }
+.service-asist-icon { background-position: 0px -21px; }
+.service-baby-icon { background-position: 0px -42px; }
+.service-cheuf-icon { background-position: 0px -63px; }
+.service-limit-icon { background-position: 0px -84px; }
+.service-nav-icon { background-position: 0px -105px; }
+.service-secure-icon { background-position: 0px -126px; }
+.service-sales-icon { background-position: 0px -147px; }
+/* NEWSLETTERS */
+.mini-boxes .newsletters-icon { background-image: url(../img/simge/mail.png); background-repeat: no-repeat; height: 95px; width: 74px; display: block; }
+/* RANGE CALCULATOR */
+.mini-boxes .range-icon { background-image: url(../img/simge/map.png); background-repeat: no-repeat; display: block; height: 90px; width: 67px; }
+.newsletters-btn { border:none; background-repeat:no-repeat; height: 25px; width: 58px; cursor: pointer; text-indent: -9999px; overflow: hidden; padding-right: 58px; background-color: transparent; background-image: url(../img/simge/btn_add.png); }
+/*-----------------------------------------------------------------------------------------------*/
+/* FOOTER 																																									     */
+/*-----------------------------------------------------------------------------------------------*/
+.footer { background-image: url(../img/simge/footer_bg.png); background-repeat: no-repeat; min-height:80px; }
+.footer .logo { width:165px; height:30px; display:block; text-indent:-9999px; position:absolute; top:13px; left:20px; }
+.footer .navigation { width:575px; height:25px; position:absolute; left: 190px; top:20px; font-size:11px; margin:0px; }
+.footer .navigation li { display:inline; padding: 0px 5px; }
+.footer .navigation li a { color: #0872ba; text-decoration:none; }
+.footer .navigation li a:hover { color: #f15a27; }
+.footer .facebook { width:24px; height:25px; display:block; position:absolute; left:862px; text-indent:-9999px; top:17px; }
+.footer .twitter { width:24px; height:25px; display:block; position:absolute; left:898px; text-indent:-9999px; top:17px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* ICONS 																																									     */
+/*-----------------------------------------------------------------------------------------------*/
+.med-car-icons { height:20px; width:21px; display:block; background-image: url(../img/simge/medium_car_icons.png); }
+.med-person-icon2 { background-repeat: repeat-x; width:42px; }
+.med-person-icon3 { background-repeat: repeat-x; width:63px; }
+.med-person-icon4 { background-repeat: repeat-x; width:84px; }
+.med-person-icon { background-position: 0px 0px; background-repeat: no-repeat; }
+.med-fuel-icon { background-position: 0px -21px; background-repeat: no-repeat; }
+.med-gear-icon { background-position: 0px -42px; background-repeat: no-repeat; }
+.med-baggage-icon { background-position: 0px -63px; background-repeat: no-repeat; }
+.med-climate-icon { background-position: 0px -84px; background-repeat: no-repeat; }
+.addicon { background-image: url(../img/simge/addicon.gif); background-repeat: no-repeat; text-indent: -9999px; display: block; height: 16px; width: 16px; }
+.delicon { background-image: url(../img/simge/delicon.gif); background-repeat: no-repeat; text-indent: -9999px; display: block; height: 16px; width: 16px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* SCROLLABLE 																																									 */
+/*-----------------------------------------------------------------------------------------------*/
+.scrollable { position:relative; overflow:hidden; height: 25px; width: 700px; }
+.scrollable .items { position:absolute; height:20000em; }
+.scrollable .items div { margin-bottom:10px; }
+/*-----------------------------------------------------------------------------------------------*/
+/* GRADIENTS 																																									   */
+/*-----------------------------------------------------------------------------------------------*/
+.gradient-reverse { background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #e7e7e7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#e7e7e7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#e7e7e7 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%,#e7e7e7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */ }
+.gradient { background: #e7e7e7; /* Old browsers */
+background: -moz-linear-gradient(top,  #e7e7e7 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e7e7e7 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+    #facebox {
+
+    /* overlay is hidden before loading */
+    display:none;
+
+    /* standard decorations */
+    width:400px;
+    border:10px solid #666;
+
+    /* for modern browsers use semi-transparent color on the border. nice! */
+    border:10px solid rgba(82, 82, 82, 0.698);
+
+    /* hot CSS3 features for mozilla and webkit-based browsers (rounded borders) */
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+  }
+
+  #facebox div {
+    padding:10px;
+    border:1px solid #3B5998;
+    background-color:#fff;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif
+  }
+
+  #facebox h2 {
+    margin:-11px;
+    margin-bottom:0px;
+    color:#fff;
+    background-color:#6D84B4;
+    padding:5px 10px;
+    border:1px solid #3B5998;
+    font-size:20px;
+  }
